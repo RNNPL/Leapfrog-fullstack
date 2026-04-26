@@ -26,7 +26,6 @@ body{
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
-    z-index:1;
     border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
@@ -116,10 +115,7 @@ section h3{
     transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 12px 25px rgba(0,0,0,0.35);
-}
+
 
 .card h4{
     margin-bottom:10px;

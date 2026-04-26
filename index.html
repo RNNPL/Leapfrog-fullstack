@@ -1,12 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment links</title>
-</head>
-<body>
-    <h1>Assignments</h1>
-    
-</body>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      section {
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .links {
+        display: flex;
+        gap: 10px;
+      }
+
+      .links a {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        border: 1px solid rgb(69, 64, 64);
+        border-radius: 20px;
+      }
+      .links a:hover {
+        background-color: rgb(184, 181, 181);
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Assignments</h1>
+      <div class="links">
+        <a href="./week1/assignment1/index.html">Blog</a>
+        <a href="./week1/assignment2/index.html">Hero section</a>
+        <a href="./week1/assignment3/index.html">Carousel</a>
+        <a href="./week1/assignment4/index.html">Promo Card</a>
+        <a href="./week1/assignment5/index.html">E Commerce</a>
+        <a href="./week1/assignment6/index.html">Portfolio</a>
+      </div>
+    </section>
+  </body>
 </html>
