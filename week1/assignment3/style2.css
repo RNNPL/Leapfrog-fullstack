@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.carousel-wrap{
+    width: 100vw;
+    height: 100vh;
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.carousel:hover .slides{
+    animation-play-state:paused;
+}
+.slides{
+    display: flex;
+    width: 300px;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+   
+}
+.slides::-webkit-scrollbar{
+    display: none;
+}
+
+
+.slide{
+    width: 300px;
+    height: 500px;
+    background: aqua;
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    padding: 20px;
+    border-radius: 20px;
+    animation:slider 9s infinite linear;
+
+}
+.carousel:hover .slide{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+@keyframes slider{
+0%,20%{
+        transform:translateX(0);
+    }
+
+    33%,53%{
+        transform:translateX(-310px);
+    }
+
+    66%,86%{
+        transform:translateX(-620px);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+}

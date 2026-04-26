@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.carousel-wrap{
+    width: 100vw;
+    height: 100vh;
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.carousel:hover .slide{
+    animation-play-state:paused;
+}
+.slides{
+    display: flex;
+    width: 300px;
+    gap: 10px;
+    
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    anchor-name: --my-carousel;
+    scroll-marker-group: after;
+   
+}
+.slides::-webkit-scrollbar{
+    display: none;
+}
+
+.slides::scroll-button(right),.slides::scroll-button(left){
+content: ">";
+height: 50px;
+width: 50px;
+cursor: pointer;
+background-color: blueviolet;
+color: antiquewhite;
+font-size: 2rem;
+border: none;
+border-radius: 50px;
+position: absolute;
+position-anchor: --my-carousel;
+position-area: right;
+translate: 10px;
+}
+.slides::scroll-button(left){
+content: "<";
+left: 0px;
+position-area: left;
+translate: -10px;
+}
+
+.slides::scroll-button(*):disabled{
+  opacity: .6;
+  cursor: auto;
+}
+.slides::scroll-button(*):hover{
+    transform: scale(1.2);
+}
+.slides::scroll-button(*):disabled:hover{
+    transform: none;
+}
+.slides::scroll-marker-group{
+    display: flex;
+    justify-content: center;
+    gap: .6em;
+}
+
+.slide{
+    width: 300px;
+    height: 500px;
+    background: aqua;
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    padding: 20px;
+    border-radius: 20px;
+  
+
+}
+.slide::scroll-marker{
+    content: "";
+    height: 1em;
+    width: 1em;
+    background-color: gray;
+    border-radius: 50%;
+
+
+}
+.slide::scroll-marker:target-current{
+    background-color:blueviolet;
+}

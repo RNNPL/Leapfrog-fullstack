@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <h1>My Blog</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Articles</a>
+        </nav>
+      </header>
+
+      <main>
+        <article>
+          <h2>What Actually Happens When You Click a Website?</h2>
+          
+          <p>
+            <span class="speaker"><a href="#audio">🔊</a></span>
+            When you click a website, a lot happens in milliseconds behind the
+            scenes. First, your browser converts the URL (like example.com) into
+            an IP address using the Domain Name System (DNS). This tells the
+            browser where the server is located.
+          </p>
+
+          <p>
+            Next, the browser establishes a connection with the server using
+            HTTP or HTTPS. In secure (HTTPS) connections, a handshake ensures
+            encrypted communication. The browser then sends a request (usually a
+            GET request) asking for the webpage.
+          </p>
+
+          <p>
+            The server processes this request, which may involve running backend
+            code, accessing databases, or handling user data. It then sends back
+            a response containing HTML, CSS, JavaScript, and a status code (like
+            200 for success or 404 for not found).
+          </p>
+
+          <p>
+            Once the browser receives the response, it builds the page by
+            parsing HTML into a DOM, applying CSS styles, and executing
+            JavaScript. It may also request additional resources like images or
+            fonts, repeating the same process.
+          </p>
+
+          <p>
+            To make everything faster, technologies like caching, CDNs, and
+            compression are used. HTTPS also ensures that all data is securely
+            encrypted.
+          </p>
+
+          <p>
+            In short, loading a website involves DNS resolution, secure
+            communication, server processing, and browser rendering—all working
+            together almost instantly.
+          </p>
+
+          <video controls width="320"></video>
+          <audio id="audio" src="Video Project.mp3" controls ><p>Audio file: What Actually Happens When You Click a Website</p></audio>
+        </article>
+        <aside>
+            Links to related files
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_blank" rel="noopener">DNS</a><br>
+            <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank" rel="noopener">HTTP</a><br>
+            <a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank" rel="noopener">DOM</a>
+        </aside>
+      </main>
+
+      <footer>Sharing insights on web development, coding, and how the internet works.</footer>
+    </div>
+  </body>
+</html>
