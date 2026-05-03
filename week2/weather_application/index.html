@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="weather-input">
+        <h1>Weather Finder</h1>
+        <p>Search city weather in real time.</p>
+        <div class="input-section">
+            <label for="city-input">City : </label>
+            <input id="city-input" type="text" placeholder="Enter city name..." />
+        </div>
+        <button id="search-btn" type="button">Search</button>
+        <p id="status" aria-live="polite">Enter a city and click search.</p>
+      </section>
+      <section id="weather-result" aria-live="polite">
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

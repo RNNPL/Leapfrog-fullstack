@@ -1,0 +1,25 @@
+.weather-result {
+  width: 300px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.wether-detail {
+  display: flex;
+  gap: 4px;
+}
+.detail-item {
+  display: flex;
+  gap: 10px;
+}
+img {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+ .weather-condition,.label,.weather-city,.weather-temp{
+    font-weight: 700;
+}

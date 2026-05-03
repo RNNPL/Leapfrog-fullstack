@@ -1,0 +1,36 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 250px;
+  max-width: 500px;
+  /* border-radius: 10px; */
+
+  padding: 5px;
+  transition: transform 0.3s ease;
+
+}
+.card-container:hover {
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px  black ;
+  transform: scale(1.05);
+}
+.card-container img {
+    width: 100%;
+    object-fit: contain;
+}
+.card-title {
+ width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+.card-title::-webkit-scrollbar {
+    display: none;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
