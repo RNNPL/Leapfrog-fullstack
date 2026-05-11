@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.header-side{
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+}
+.header-profile{
+border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
