@@ -3,7 +3,7 @@ const searchBtn = document.querySelector("#search-btn");
 const statusEl = document.querySelector("#status");
 const weatherResult = document.querySelector("#weather-result");
 
-const API_KEY = "c7f70661d273defd632c06ee0960b907";
+const API_KEY = "fake-key";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 async function fetchWeather(city) {
